@@ -1,9 +1,13 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import Logo from '../../assets/logo.svg';
 
 const Login: React.FC = () => {
   return (
-    <Text>LOGIN</Text>
+    <View>
+      <Logo />
+      <Text>LOGIN</Text>
+    </View>
   );
 };
 
