@@ -1,13 +1,14 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { ImageBackground, Text, View } from 'react-native';
 import Logo from '@/assets/logo.svg';
 
 const Login: React.FC = () => {
   return (
-    <View>
-      <Logo />
-      <Text>LOGIN</Text>
-    </View>
+    <ImageBackground source={require('@/assets/background.png')} style={{ width: '100%', height: '100%' }}>
+      <View style={{ justifyContent: 'center', alignItems: 'center', marginTop: 52 }}>
+        <Logo />
+      </View>
+    </ImageBackground>
   );
 };
 
